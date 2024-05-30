@@ -1,6 +1,8 @@
 # Python project to pull router status from Cisco Catalyst SD-WAN Manager and push into ESRI ArcGIS via MQTT and Velocity
 
-A project by Pete Kavanagh
+![Screenshot of ESRI ArcGIS](arcgis.png)
+
+A project by Pete Kavanagh, leveraging the Cisco Catalyst WAN Python SDK: https://github.com/cisco-open/cisco-catalyst-wan-sdk
 
 ## Instructions
 
@@ -30,7 +32,7 @@ login.json file has to be in this format:
 
 ## Dev Notes:
 docker run -v ${PWD}/app:/app -w /app python:3.12-alpine3.20 sh -c "pip install catalystwan"
-https://github.com/cisco-open/cisco-catalyst-wan-sdk
+
 
     #devices = session.api.devices.get()
     #users = session.api.users.get()
